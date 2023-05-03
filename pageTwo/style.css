@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-size: 100%;
+    background: #E0E0E0;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.conteiner {
+    position: relative;
+    max-width: 90rem;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.oval,.oval2 {
+    width: 79rem;
+    height:102.5rem;
+    background: #181818;
+    border-radius: 100%;
+    position: absolute;
+    top: -20rem;
+    left: -12rem;
+}
+
+.oval2 {
+    position: absolute;
+    top: 60rem;
+    left: 6rem;
+}
+
+.elips1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.arrow1 {
+    position: absolute;
+    top: 1.8rem;
+    left: 2rem;
+    z-index: 2;
+}
+
+.elips2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.arrow2 {
+    position: absolute;
+    bottom: 1.8rem;
+    right: 2.4rem;
+    z-index: 2;
+}
+
+.content {
+    position: absolute;
+    top: 3rem;
+    left: 25rem;
+    max-width: 36.25rem;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header-name{
+    font-size: 3rem;
+    margin: 3rem 0rem;
+    padding-left: 4.5rem;
+}
+
+.block {
+    padding-left: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-left: 4px solid #fff;
+}
+
+.block h2{
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.quashn {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: -35px;
+    left: -93px;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: #1D2CF3;
+    border-radius: 100%;
+}
+
+.quashn li{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    column-gap: 1rem;
+}
