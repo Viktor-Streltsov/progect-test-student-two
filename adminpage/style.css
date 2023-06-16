@@ -4,7 +4,7 @@ body {
     background: #F8F9FA;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -31,12 +31,12 @@ a {
 }
 
 
-.block-content {
+.block_content {
     padding: 0rem 1.5rem;
     margin-bottom: 5rem;
 }
 
-.block-registr-border {
+.block_registr_border {
     height: 18rem;
     background: #181818;
     border-radius: 15px;
@@ -44,7 +44,7 @@ a {
     margin-bottom: 7rem;
 }
 
-.block-registr-type {
+.block_registf_type {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,7 +52,7 @@ a {
     column-gap: 1rem;
 }
 
-.name-page {
+.name_page {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -60,18 +60,18 @@ a {
     color: #fff;
 }
 
-.input-register input {
+.input_register input {
     padding: 0.6rem 1.5rem;
     background: #FFFFFF;
     border: 0.5px solid #E2E8F0;
     border-radius: 15px;
 }
 
-.input-register input::placeholder {
+.input_register input::placeholder {
     color: #A0AEC0;
 }
 
-.img-reg {
+.img_reg {
     width: 1rem;
 }
 
@@ -80,29 +80,29 @@ a {
     align-items: center;
 }
 
-.singn-text {
+.singn_text {
     margin-left: 0.3rem;
     font-weight: 700;
     font-size: 0.9rem;
     color: #fff;
 }
 
-.block-head-content {
+.block_head_content {
     max-width: 9.5rem;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space_between;
     align-items: center;
-    background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%);
+    background: linear_gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%);
     border: 1.5px solid #FFFFFF;
     box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(10.5px);
     border-radius: 15px;
 }
 
-.block-head-one {
+.block_head_one {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -110,36 +110,36 @@ a {
     column-gap: 1.5rem;
 }
 
-.name-avatar-email h3{
+.name_avatar_email h3 {
     font-size: 1.3rem;
     color: #2D3748;
 }
 
-.name-avatar-email p{
+.name_avatar_email p {
     font-size: 0.9rem;
     color: #718096;
 }
 
-.block-head-links {
+.block_head_links {
     display: flex;
     flex-direction: row;
     column-gap: 1.5rem;
 }
 
-.block-link {
+.block_link {
     width: 9rem;
     display: grid;
     place-items: center;
     padding: 0.6rem 0rem;
 }
 
-.block-link:hover {
+.block_link:hover {
     background: #FFFFFF;
     box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.06);
     border-radius: 12px;
 }
 
-.block-link a span{
+.block_link a span {
     font-size: 0.8rem;
     color: #2D3748;
 }
@@ -152,17 +152,17 @@ a {
 }
 
 
-.block-progect {
+.block_progect {
     padding: 1.1rem 1.4rem;
     border-radius: 20px;
     grid-column: span 2;
 }
 
-.head-progect {
+.head_progect {
     margin-bottom: 3rem;
 }
 
-.head-progect h3 {
+.head_progect h3 {
     font-size: 1.3rem;
     font-weight: 700;
     color: #2D3748;
@@ -177,14 +177,13 @@ a {
 }
 
 .table td {
-    border-top: 1px solid #E2E8F0;
     font-size: 0.9rem;
     font-weight: 700;
     color: #2D3748;
     padding: 1rem 0rem;
 }
 
-.block-avtor {
+.block_avtor {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -200,7 +199,7 @@ a {
     border-radius: 100%;
 }
 
-.img-file {
+.img_file {
     padding: 0.4rem;
     background: #718096;
     border-radius: 12px;
@@ -210,25 +209,23 @@ a {
     background: #fff;
 }
 
-.text-avtor-file h3, .text-function p {
+.text_avtor_file h3,
+.text_function p {
     font-size: 0.8rem;
     color: #2D3748;
 }
 
-.text-avtor-file p, .text-function p {
+.text_avtor_file p,
+.text_function p {
     font-size: 0.7rem;
     color: #718096;
 }
 
-.text-status {
+.text_status {
     max-width: 4rem;
     padding: 0.3rem;
     background: #48BB78;
     border-radius: 8px;
     text-align: center;
     color: #fff;
-}
-
-.edit {
-    color: #718096;
 }
