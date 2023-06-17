@@ -1,0 +1,164 @@
+.container_content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head {
+    max-width: 100%;
+    background: #fff;
+    padding: 1.75rem 6.25rem 5.6rem;
+}
+
+.nav {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.nav_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_nav {
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
+    padding-bottom: 0.19rem;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom 0.5s;
+    color: #263057;
+}
+
+.link_nav:hover {
+    border-bottom: 1px solid #000;
+}
+
+.btn_nav1 {
+    padding: 0.6rem 1.5rem;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.09em;
+}
+
+
+.btn_nav1:hover {
+    background: #FFDE59;
+    border: 1px solid #FFDE59;
+    color: #000;
+}
+
+.container_tarif {
+    max-width: 100%;
+    background: #E0E0E0;
+    padding: 3.2rem 6.25rem;
+}
+
+.head_tarif {
+    text-align: center;
+    margin-bottom: 1.6rem;
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: #263057;
+}
+
+.head_tarif h2 {
+    font-weight: 400;
+}
+
+.block_tarif {
+    max-width: 90rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding-bottom: 4rem;
+}
+
+.cart_tarif {
+    text-align: center;
+}
+
+.nav_tarif {
+    padding: 3.125rem 0rem;
+}
+
+.nav_tarif_link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.people_tarif_content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.people_tarif_content li{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25rem;
+    align-items: center;
+    padding: 1.2rem 2.25rem;
+    border-radius: 30px;
+    color: #263057;
+    background: #fff;
+    transition: background 0.5s;
+    margin-bottom: 5rem;
+}
+
+.block_avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.info_tarif {
+    width: 22rem;
+}
+
+.btn_tarif {
+    display: grid;
+    place-items: center;
+    width: 14rem;
+    height: 3rem;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 60px;
+    color: #fff;
+}
+
+.btn_tarif:hover {
+    background: #FFDE59;
+    border: 1px solid #FFDE59;
+    color: #000;
+}
+
+.cart_tarif_content li h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.75rem;
+    margin-bottom: 0.8rem;
+}
+
+.cart_tarif_content li p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 1rem 0rem;
+}
