@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import classes from "./adminPage.module.css"
 import {useDispatch, useSelector} from "react-redux"
-import {getUsers} from "../../axios/usersApi"
 import AddTest from "../../components/addTest/AddTest"
 import {getUserTestApi} from "../../axios/testApi"
 
@@ -9,7 +8,6 @@ function AdminPage() {
     const dispatch = useDispatch()
 
     const {userTest} = useSelector(state => state.testReducer)
-    console.log("userTestsdfsdfsdfsdf",userTest)
 
     useEffect(() => {
         dispatch(getUserTestApi())

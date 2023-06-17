@@ -23,7 +23,6 @@ export const getTestsApi = () => {
         dispatch(preloader(true))
         try {
             const {data} = await $api.get(`api/test/`)
-            console.log(data)
             dispatch(setTest(data))
         } catch (e) {
             dispatch(setError(e.message))
@@ -73,6 +72,7 @@ export const addUserTest = (score, userId) => {
             if (data.status === 200) {
                 alert('Вы успешно добавили')
                 dispatch(setIsAuth(false))
+                dispatch(setScore(0))
             }
 
         } catch (e) {

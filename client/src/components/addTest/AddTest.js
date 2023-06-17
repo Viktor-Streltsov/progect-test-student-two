@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import classes from "./addTest.module.css"
-import {useDispatch} from "react-redux"
-import {addTestApi} from "../../axios/testApi"
+import {useDispatch, useSelector} from "react-redux"
+import {addTestApi, getTestsApi} from "../../axios/testApi"
 
 const regex = /^[1-4]$/
 
@@ -14,6 +14,17 @@ function AddTest() {
         options: ['', '', '', ''],
         correctAnswer: "",
     })
+
+    const [show, setShow] = useState(false)
+
+
+    const tests = useSelector((state) => state.testReducer.tests)
+
+    const admin = () => {
+        setShow(!show)
+        dispatch(getTestsApi())
+    }
+
     const handleChange = (e) => {
         const {name, value} = e.target
 
@@ -58,9 +69,12 @@ function AddTest() {
         })
     }
 
-
+    useEffect(() => {
+        dispatch(getTestsApi())
+    }, [dispatch])
 
     return (
+        <>
         <div className={classes.container_content}>
             <section className={classes.container_form_internships}>
                 <div className={classes.head_form}>
@@ -105,7 +119,38 @@ function AddTest() {
                     <button type="submit">отправить тест</button>
                 </form>
             </section>
+            <button
+                className={classes.btn_nav1}
+                onClick={admin}
+            >
+                {show ? "посмотреть вопросы" : "закрыть"}
+            </button>
         </div>
+
+            {!show ?
+                <>
+                    <h1>Добавленные вопросы</h1>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Вопрос</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {tests.map(item => (
+                        <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.question}</td>
+                        </tr>
+                    ))}
+                    </tbody>
+                </table>
+                </>
+                :
+                ""
+            }
+        </>
     )
 }
 
